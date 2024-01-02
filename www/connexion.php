@@ -1,4 +1,4 @@
-<?php require('./inc/unit.php');
+<?php require('./inc/init.php');
 
 $contenu .= "<div class='validation'>Vous êtes inscrit à notre site web. <u>Cliquez ici pour vous connecter</u></div>";
 

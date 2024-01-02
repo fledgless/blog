@@ -1,7 +1,12 @@
 <!-- mysqli -->
 <?php
 
-$mysqli = new mysqli("localhost", "db_user", "Asterion*1911", "blog");
+$host = $_ENV['MYSQL_HOST'];
+$username = $_ENV['MYSQL_USER'];
+$password = $_ENV['MYSQL_PASSWORD'];
+$database = $_ENV['MYSQL_DATABASE'];
+
+$mysqli = new mysqli($host, $username, $password, $database);
 if ($mysqli->connect_error) die("Un problème est survenu lors de la tentative de connexion à la BDD :" . $mysqli->connect_error);
 
 require('function.php');

@@ -1,4 +1,4 @@
-<?php require("./inc/unit.php") ?>
+<?php require("./inc/init.php") ?>
 <?php 
 
 
