@@ -1,4 +1,4 @@
-<!-- mysqli -->
+<?php session_start(); ?>
 <?php
 
 $host = $_ENV['MYSQL_HOST'];

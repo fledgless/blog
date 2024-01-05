@@ -31,6 +31,12 @@
             <li class="nav-item">
             <a class="nav-link" href="/inscription.php">S'inscrire</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/connexion.php">Se connecter</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/connexion.php?action=deconnexion">Se déconnecter</a>
+            </li>
         </div>
     </div>
 </nav> 

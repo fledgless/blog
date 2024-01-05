@@ -30,3 +30,19 @@ function debug($var, $mode = 1)
     }
     echo '</div>';
 }
+
+function internauteEstConnecte() {
+    if (!isset($_SESSION['utilisateur'])) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function internauteEstConnecteEtAdministrateur() {
+    if (internauteEstConnecte() && $_SESSION['utilisateur']['is_admin'] == 1) {
+        return true;
+    } else {
+        return false;
+    }
+}
